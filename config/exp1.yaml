@@ -1,0 +1,18 @@
+seed: 24
+
+diffusion:
+  beta_schedule: linear_beta_schedule
+  schedule_args:
+    beta_start: 0.0001
+    beta_end: 0.02
+  timesteps: 100
+  sampler_args:
+    sampler_type: uniform
+
+train:
+  epochs: 1000
+  batch_size: 40
+  optimizer: Adam #do
+  learning_rate: 1e-3
+  loss_type: l2
+
